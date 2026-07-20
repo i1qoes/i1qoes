@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Archive</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+body{
+    background:
+    radial-gradient(circle at top left,#5a00ff33,transparent 40%),
+    radial-gradient(circle at bottom right,#9d00ff22,transparent 40%),
+    #050505;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+.card{
+    background:rgba(15,15,18,0.9);
+    border:1px solid rgba(140,80,255,.25);
+    border-radius:28px;
+    padding:40px;
+    backdrop-filter:blur(12px);
+    box-shadow:
+    0 0 30px rgba(128,0,255,.15),
+    inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:25px;
+    color:#b889ff;
+    text-decoration:none;
+}
+
+.back:hover{
+    color:#d1b3ff;
+}
+
+h1{
+    text-align:center;
+    color:#b889ff;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#8e8e8e;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.character-grid{
+    display:grid;
+    gap:20px;
+}
+
+.character{
+    position:relative;
+    background:#0d0d11;
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:20px;
+    padding:25px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.character:hover{
+    transform:translateY(-6px);
+    border-color:#a970ff;
+    box-shadow:
+    0 0 15px rgba(169,112,255,.25),
+    0 0 35px rgba(169,112,255,.15);
+}
+
+.character::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:
+    radial-gradient(
+        circle,
+        rgba(169,112,255,.08),
+        transparent 60%
+    );
+    opacity:0;
+    transition:.4s;
+    pointer-events:none;
+}
+
+.character:hover::before{
+    opacity:1;
+}
+
+.status-bar{
+    height:5px;
+    width:100%;
+    background:linear-gradient(
+        90deg,
+        #6a00ff,
+        #a970ff,
+        #d9b3ff
+    );
+    border-radius:999px;
+    margin-bottom:15px;
+}
+
+.character h2{
+    color:#b889ff;
+    margin-bottom:12px;
+}
+
+.label{
+    color:#9e9e9e;
+}
+
+.info{
+    margin-bottom:5px;
+}
+
+.desc{
+    margin-top:15px;
+    color:#d6d6d6;
+    line-height:1.8;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <a href="index.html" class="back">← กลับหน้าแรก</a>
+
+        <h1>📁 Character Archive</h1>
+
+        <div class="subtitle">
+            Archive Database v1.0<br>
+            Authorized User : i1qoes
+        </div>
+
+        <div class="character-grid">
+
+            <div class="character">
+                <div class="status-bar"></div>
+
+                <h2>#001 Bible Restinpeace</h2>
+
+                <p class="info"><span class="label">STATUS :</span> CLASSIFIED</p>
+                <p class="info"><span class="label">PRIORITY :</span> MAXIMUM</p>
+                <p class="info"><span class="label">FILE :</span> ACTIVE</p>
+
+                <div class="desc">
+                    ตัวละครที่อยู่ลำดับแรกใน Archive
+                    และเป็นหนึ่งในตัวละครที่มีความหมายมากที่สุด
+                    สำหรับเจ้าของฐานข้อมูลนี้
+                </div>
+            </div>
+
+            <div class="character">
+                <div class="status-bar"></div>
+
+                <h2>#002 Zaejin Cruz</h2>
+
+                <p class="info"><span class="label">STATUS :</span> ARCHIVED</p>
+                <p class="info"><span class="label">PRIORITY :</span> HIGH</p>
+                <p class="info"><span class="label">FILE :</span> ACTIVE</p>
+
+                <div class="desc">
+                    ถูกจัดเก็บอยู่ในระดับความสำคัญสูง
+                    และเป็นหนึ่งในตัวละครที่ชื่นชอบมากที่สุด
+                </div>
+            </div>
+
+            <div class="character">
+                <div class="status-bar"></div>
+
+                <h2>#003 Kishimaru Rai-o</h2>
+
+                <p class="info"><span class="label">STATUS :</span> ARCHIVED</p>
+                <p class="info"><span class="label">PRIORITY :</span> HIGH</p>
+                <p class="info"><span class="label">FILE :</span> ACTIVE</p>
+
+                <div class="desc">
+                    อยู่ในรายชื่อตัวละครสำคัญของ Archive
+                    และได้รับการจัดเก็บในแฟ้มระดับสูง
+                </div>
+            </div>
+
+            <div class="character">
+                <div class="status-bar"></div>
+
+                <h2>#004 Reaf Veylan</h2>
+
+                <p class="info"><span class="label">STATUS :</span> ARCHIVED</p>
+                <p class="info"><span class="label">PRIORITY :</span> STANDARD</p>
+                <p class="info"><span class="label">FILE :</span> ACTIVE</p>
+
+                <div class="desc">
+                    หนึ่งในตัวละครที่ได้รับการบันทึกไว้
+                    ภายในฐานข้อมูล Character Archive
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © Character Archive • i1qoes
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
